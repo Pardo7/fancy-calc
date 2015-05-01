@@ -121,7 +121,9 @@ window.onload = function () {
     };
 
     // Changing Between my light and dark background
-    var bodyObj, className, index;
+    var changeBtn, bodyObj, className, index;
+
+    changeBtn = document.getElementById('changeButton');
 
 		bodyObj = document.getElementById('body');
 		index = 1;
@@ -137,9 +139,9 @@ window.onload = function () {
 		        index = 0;
 		    }
 		};
-		// For everytime the user clicks on the 'body' background the array index will change and my image will rotate from a light to dark theme.
-		bodyObj.onclick = function(e){
-		    e.currentTarget.className = className[index];
+		// For everytime the user clicks on the 'changeBtn' the array index will change and my image will rotate from a light to dark theme.
+		changeBtn.onclick = function(e){
+		    bodyObj.className = className[index];
 		    updateIndex();
 		};
 };
