@@ -62,5 +62,17 @@ window.onload = function() {
 		calculatorDisplay.innerHTML = '';
 		operator.innerHTML = '+';
 	};
+	subtractOp.onclick = function() {
+		hiddenOperand = calculatorDisplay.innerHTML;
+		console.log(hiddenOperand);
+		calculatorDisplay.innerHTML = '';
+		operator.innerHTML = '-';
+	};
+	multiplyOp.onclick = function() {
+		hiddenOperand = calculatorDisplay.innerHTML;
+		console.log(hiddenOperand);
+		calculatorDisplay.innerHTML = '';
+		operator.innerHTML = '*';
+	};
 	
 }
