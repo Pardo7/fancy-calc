@@ -35,4 +35,32 @@ window.onload = function() {
 	numberThree.onclick = function() {
 		calculatorDisplay.innerHTML += '3';
 	};
+	numberFour.onclick = function() {
+		calculatorDisplay.innerHTML += '4';
+	};
+	numberFive.onclick = function() {
+		calculatorDisplay.innerHTML += '5';
+	};
+	numberSix.onclick = function() {
+		calculatorDisplay.innerHTML += '6';
+	};
+	numberSeven.onclick = function() {
+		calculatorDisplay.innerHTML += '7';
+	};
+	numberEight.onclick = function() {
+		calculatorDisplay.innerHTML += '8';
+	};
+	numberNine.onclick = function() {
+		calculatorDisplay.innerHTML += '9';
+	};
+	numberZero.onclick = function() {
+		calculatorDisplay.innerHTML += '0';
+	};
+	additionOp.onclick = function() {
+		hiddenOperand = calculatorDisplay.innerHTML;
+		console.log(hiddenOperand);
+		calculatorDisplay.innerHTML = '';
+		operator.innerHTML = '+';
+	};
+	
 }
