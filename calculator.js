@@ -119,4 +119,27 @@ window.onload = function () {
         calculatorDisplay.innerHTML = '';
         operator.innerHTML = '';
     };
+
+    // Changing Between my light and dark background
+    var bodyObj, className, index;
+
+		bodyObj = document.getElementById('body');
+		index = 1;
+		className = [
+		    'lightTheme',
+		    'darkTheme'
+		];
+
+		function updateIndex(){
+		    if(index === 0){
+		        index = 1;
+		    }else{
+		        index = 0;
+		    }
+		};
+		// For everytime the user clicks on the 'body' background the array index will change and my image will rotate from a light to dark theme.
+		bodyObj.onclick = function(e){
+		    e.currentTarget.className = className[index];
+		    updateIndex();
+		};
 };

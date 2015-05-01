@@ -1,5 +1,14 @@
-body {
-    background: url(https://scontent-sjc.xx.fbcdn.net/hphotos-xta1/t31.0-8/1519681_632191696817226_771236786_o.jpg);
+html, body, #body {
+    height: 100%;
+    width: 100%;
+}
+/*My Light Theme*/
+#body.lightTheme {
+	background: url(https://scontent-sjc.xx.fbcdn.net/hphotos-xta1/t31.0-8/1519681_632191696817226_771236786_o.jpg);
+}
+/*My Dark Theme*/
+#body.darkTheme {
+	background: url(http://republicanhour.com/wp-content/plugins/akismet/white-and-black-background-tumblr-i3.jpg);
 }
 
 #container {

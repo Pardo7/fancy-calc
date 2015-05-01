@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f9850249-c0e8-4189-9e60-4c1913a3a706" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculator.html" afterPath="$PROJECT_DIR$/calculator.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/calculator.js" afterPath="$PROJECT_DIR$/calculator.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-    </list>
+    <list default="true" id="f9850249-c0e8-4189-9e60-4c1913a3a706" name="Default" comment="" />
     <ignored path="quantifind.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
