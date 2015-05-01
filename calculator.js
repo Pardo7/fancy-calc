@@ -21,6 +21,7 @@ window.onload = function() {
 			multiplyOp = document.querySelector("#op_mult"),
 			divideOp 	 = document.querySelector("#op_div"),
 			enterOp 	 = document.querySelector("#op_ent"),
+			squareOp 	 = document.querySelector("#sqr_root")
 			clearOp 	 = document.querySelector("#op_clr");
 	// The calculators state
 	var hiddenOperand;
@@ -80,15 +81,36 @@ window.onload = function() {
 		calculatorDisplay.innerHTML = '';
 		operator.innerHTML = '/';
 	};
-
-	enterOp.onclick = function() {
-		// all of my math logic will go here
+	squareOp.onclick = function() {
+		hiddenOperand = calculatorDisplay.innerHTML;
+		console.log(hiddenOperand);
+		calculatorDisplay.innerHTML = '';
+		operator.innerHTML = Math.sqrt(hiddenOperand);
 	}
 
 
-
-
-
-
-
-}
+	enterOp.onclick = function() {
+		// all of my math logic will go here
+		var result = parseInt(hiddenOperand);
+		if (operator.innerHTML === '+') {
+			result += parseInt(calculatorDisplay.innerHTML);
+		} else if (operator.innerHTML === '-') {
+			result -= parseInt(calculatorDisplay.innerHTML);
+		} else if (operator.innerHTML === '*') {
+			result *= parseInt(calculatorDisplay.innerHTML);
+		} else if (operator.innerHTML === '/') {
+			result /= parseInt(calculatorDisplay.innerHTML);
+		} else if (operator.innerHTML === 'sqr') {
+			 result = parseInt(calculatorDisplay.innerHTML);
+		} else {
+			result = calculatorDisplay.innerHTML;
+		}
+		calculatorDisplay.innerHTML = result;
+		operator.innerHTML 					= '';
+	};
+	clearOp.onclick = function() {
+		hiddenOperand = undefined;
+		calculatorDisplay.innerHTML = '';
+		operator.innerHTML = '';
+	};
+};
