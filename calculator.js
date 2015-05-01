@@ -74,5 +74,21 @@ window.onload = function() {
 		calculatorDisplay.innerHTML = '';
 		operator.innerHTML = '*';
 	};
-	
+	divideOp.onclick = function() {
+		hiddenOperand = calculatorDisplay.innerHTML;
+		console.log(hiddenOperand);
+		calculatorDisplay.innerHTML = '';
+		operator.innerHTML = '/';
+	};
+
+	enterOp.onclick = function() {
+		// all of my math logic will go here
+	}
+
+
+
+
+
+
+
 }
