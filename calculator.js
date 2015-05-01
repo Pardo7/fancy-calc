@@ -26,7 +26,8 @@ window.onload = function() {
 	// The calculators state
 	var hiddenOperand;
 
-	// The event handler functions
+	// The event handler functions, Whats happening here is - I am implementing an onclick listener on each button
+	// When that button is clicked it will display on the calculators screen.
 	numberOne.onclick = function() {
 		calculatorDisplay.innerHTML += '1';
 	};
@@ -57,6 +58,8 @@ window.onload = function() {
 	numberZero.onclick = function() {
 		calculatorDisplay.innerHTML += '0';
 	};
+
+	// When either of the buttons below are clicked I am storing the previous state and updating the display
 	additionOp.onclick = function() {
 		hiddenOperand = calculatorDisplay.innerHTML;
 		console.log(hiddenOperand);
@@ -91,6 +94,7 @@ window.onload = function() {
 
 	enterOp.onclick = function() {
 		// all of my math logic will go here
+		// Now I am just doing the math once my enter button is clicked.
 		var result = parseInt(hiddenOperand);
 		if (operator.innerHTML === '+') {
 			result += parseInt(calculatorDisplay.innerHTML);
@@ -108,6 +112,8 @@ window.onload = function() {
 		calculatorDisplay.innerHTML = result;
 		operator.innerHTML 					= '';
 	};
+
+	// I'm clearing everything out when the clear button is pressed.
 	clearOp.onclick = function() {
 		hiddenOperand = undefined;
 		calculatorDisplay.innerHTML = '';
