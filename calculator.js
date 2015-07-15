@@ -1,4 +1,5 @@
 window.onload = function () {
+    // adding some adjusted comments for testing
     // Calculator Displays
     var calculatorDisplay = document.getElementById("result_display_value");
     var operator          = document.getElementById("operator_display");
@@ -139,7 +140,7 @@ window.onload = function () {
 		        index = 0;
 		    }
 		};
-		// For everytime the user clicks on the 'changeBtn' the array index will change and my image will rotate from a light to dark theme.
+		// Everytime the user clicks on the 'changeBtn' the array index will change and my image will rotate from a light to dark theme.
 		changeBtn.onclick = function(e){
 		    bodyObj.className = className[index];
 		    updateIndex();
