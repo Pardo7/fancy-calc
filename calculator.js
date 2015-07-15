@@ -140,6 +140,7 @@ window.onload = function () {
 		        index = 0;
 		    }
 		};
+        // (Testing)
 		// Everytime the user clicks on the 'changeBtn' the array index will change and my image will rotate from a light to dark theme.
 		changeBtn.onclick = function(e){
 		    bodyObj.className = className[index];
